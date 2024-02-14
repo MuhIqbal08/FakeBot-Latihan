@@ -1,0 +1,109 @@
+*,html,body {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins';
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkblue;
+    min-height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#pertanyaan {
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+}
+
+input {
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 300;
+    color: darkblue;
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.text {
+    text-align: center;
+}
+
+button {
+    border: none;
+    padding: 0 10px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    margin-left: 10px;
+    width: 90px;
+    background-color: darkorange;
+    color: darkblue;
+    cursor: pointer;
+    transition: .3s all ease-in-out;
+    -webkit-transition: .3s all ease-in-out;
+    -moz-transition: .3s all ease-in-out;
+    -ms-transition: .3s all ease-in-out;
+    -o-transition: .3s all ease-in-out;
+}
+
+button:hover {
+    background-color: rgb(255, 187, 0);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+#title {
+    color: white;
+}
+
+#loaders {
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    border-top: 13px solid darkorange;
+    border-radius: 50%;
+    animation: 1s spining infinite linear;
+    z-index: 9;
+    -webkit-animation: 1s spining infinite linear;
+}
+
+@keyframes spining {
+    0% {
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+}
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+}
+}
